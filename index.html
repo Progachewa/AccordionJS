@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Dogs</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+
+    <body>
+        <header>
+            <h1 id = "headerTitle">Types of dog breeds</h1>
+        </header>
+
+        <main>
+            <section id = "accordionContainer">
+                <div class = "menu">
+                    <div class = "header">
+                        <div class = "title">Labrador Retrievers</div>
+                        <div class = "plus">+</div>
+                    </div>
+                    <div class = "textContainer" >
+                        Labrador retrievers are sturdy, solid dogs. They are almost square in appearance, with a strong body and sturdy legs. The maximum height for a male is 24 inches, which puts them in the medium-size dog category, but their sturdy build can make them seem much larger. Weights range from 85 pounds for a large male to 55 pounds for a smaller female. Field line bred dogs are often taller and somewhat thinner in build.
+                    </div>
+                </div>
+
+                <div class = "menu">
+                    <div class = "header">
+                        <div class = "title">German Shepherd</div>
+                        <div class = "plus">+</div>
+                    </div>
+                    <div class = "textContainer">
+                        Generally considered dogkind's finest all-purpose worker, the German Shepherd Dog is a large, agile, muscular dog of noble character and high intelligence. Loyal, confident, courageous, and steady, the German Shepherd is truly a dog lover's delight. German Shepherd Dogs can stand as high as 26 inches at the shoulder and, when viewed in outline, presents a picture of smooth, graceful curves rather than angles. The natural gait is a free-and-easy trot, but they can turn it up a notch or two and reach great speeds.
+                    </div>
+                </div>
+
+                <div class = "menu">
+                    <div class = "header">
+                        <div class = "title">Beagle</div>
+                        <div class = "plus">+</div>
+                    </div>
+                    <div class = "textContainer">
+                        Not only is the Beagle an excellent hunting dog and loyal companion, it is also happy-go-lucky, funny, and thanks to its pleading expression cute. They were bred to hunt in packs, so they enjoy company and are generally easygoing. There are two Beagle varieties: those standing under 13 inches at the shoulder, and those between 13 and 15 inches. Both varieties are sturdy, solid, and 'big for their inches, as dog folks say. They come in such pleasing colors as lemon, red and white, and tricolor.
+                    </div>
+                </div>
+
+                    <div class = "menu">
+                        <div class = "header">
+                            <div class = "title">Cane Corso</div>
+                            <div class = "plus">+</div>
+                        </div>
+                        <div class = "textContainer">
+                            The Cane Corso is a working dog who absolutely loves having a job to do. This old Italian dog breed was developed to guard property and hunt big game such as wild boar. Cane Corsos are powerful and athletic, best suited to experienced pet parents who have large, securely fenced yards. They will definitely need their humans to give them a task; otherwise, they may find their own ways to reduce boredom — probably with destructive behavior. If you can give your dog plenty of space, exercise, and training, then this may be the breed for you!
+                        </div>
+                    </div>
+
+                    <div class = "menu">
+                        <div class = "header">
+                            <div class = "title">Akita</div>
+                            <div class = "plus">+</div>
+                        </div>
+                        <div class = "textContainer">
+                            The Akita is a large and powerful dog breed with a noble and intimidating presence. They were originally used for guarding royalty and nobility in feudal Japan. These dogs also tracked and hunted wild boar, black bear, and sometimes deer. An Akita is bound to shed quite a bit, and you may be wiping some drool from their face if you bring one home. Certainly, owners should be prepared for some cleanup. Furthermore, they tend to be stubborn and are not overly fond of strangers. While those can be good traits for a watchdog, they will need an experienced trainer if they are to interact with other animals or people. Novices beware.
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </main>
+
+        <script>
+            let accordion = document.querySelectorAll(".header"),
+                plus = document.querySelectorAll(".plus"),
+                text = document.querySelectorAll(".textContainer");
+
+                for( let i = 0; i < accordion.length; i++){
+                    accordion[i].addEventListener("click", headerClicked);
+                    function headerClicked(){
+                        if(text[i].style.display === "block"){
+                            text[i].style.display = "none";
+                            plus[i].innerHTML = "+";
+                        } else {
+                            text[i].style.display = "block";
+                            plus[i].innerHTML = "-";
+                        };
+                    this.classList.toggle("active");
+                }
+            }
+        </script>
+        
+    </body>
+
+</html>

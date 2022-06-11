@@ -1,0 +1,51 @@
+body{
+    background-image: url("animals.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+#headerTitle{
+    text-align: center;
+    margin-top: 230px;
+    color: #000;
+    font-size: 40px;
+}
+
+#accordionContainer{
+    max-width: 700px;
+    margin: 0 350px;
+}
+
+.menu{
+    border: 5px solid white;
+}
+
+.header{
+    display: flex;
+    cursor: pointer;
+    background-color: #000;
+    color: #fff;
+    font-size: 20px;
+}
+.header:hover{
+    background-color: #585858;
+}
+
+.title{
+    flex: 1;
+}
+
+.textContainer{
+  display: none;
+  margin: 0 10px;
+  text-align: justify;
+}
+
+.active{
+    background-color: #A9A9A9;
+}
+
+
+
+
