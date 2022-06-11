@@ -2,7 +2,6 @@ body{
     background-image: url("animals.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    
 }
 
 #headerTitle{
@@ -28,6 +27,7 @@ body{
     color: #fff;
     font-size: 20px;
 }
+
 .header:hover{
     background-color: #585858;
 }
